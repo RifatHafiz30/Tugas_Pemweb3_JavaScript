@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contoh Program JavaScript</title>
+</head>
+<script language="javascript">
+	//Deklarasi Function/Method
+	function test(){
+	val1=window.prompt("Input Nilai (1-5):")
+	//Alur Switch case menampilkan berdasrkan inputan
+	switch (val1){
+		case "1":
+		document.write("bilanagan satu")
+		break
+		case "2":
+		document.write("bilanagan dua")
+		break
+		case "3":
+		document.write("bilanagan tiga")
+		break
+		case "4":
+		document.write("bilanagan empat")
+		break
+		case "5":
+		document.write("bilanagan lima")
+		break
+		default:
+		document.write("bilanagan lainnya")
+		break
+		}
+	}
+</script>
+<body>
+	<!--Tombol untuk memanggil Function Test-->
+	<input type="button" name="button1" value="switch" onclick=test()>
+</body>
+</html>

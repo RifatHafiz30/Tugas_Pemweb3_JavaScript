@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tugas 1</title>
+</head>
+<script language="javascript">
+	//Mendeklarasikan method function untuk menampilkan hasil konversi nilai
+	function konversi(){
+		var x=document.form.angka.value;
+		if(x<=40)
+			document.form.huruf. value="E"
+		else if(x<=55)
+			document.form.huruf. value="D"
+		else if(x<=60)
+			document.form.huruf. value="C"
+		else if(x<=65)
+			document.form.huruf. value="BC"
+		else if(x<=70)
+			document.form.huruf. value="B"
+		else if(x<=80)
+			document.form.huruf. value="AB"
+		else if(x<=100)
+			document.form.huruf. value="A"
+		else
+			document.form.huruf. value="Angka tidak masuk dalam kategori"
+	}
+</script>
+<body>
+	<!--untuk judul pada web-->
+	<h1>Konversi Nilai</h1>
+	<!-- Tag form untuk merampung seluruh nlai element-->
+	<form method="POST" name="form">
+		<!-- tag untuk menampilkan text area-->
+		<p>Angka : <input type="text" name="angka"></p>
+		<!-- tag untuk menampilkan button memanggil function dan menghapus text area-->
+		<input type="button" name="button1" value="konversi" onclick=konversi()>
+		<input type="reset" name="button2">
+		<!-- text area yang berfungsi menampilkan hasil konversi-->
+		<p>Huruf :<input type="text" name="huruf"></p>
+	</form>
+</body>
+</html>
